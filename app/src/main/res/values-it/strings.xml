@@ -117,6 +117,8 @@
     <string name="failed_thumbnail">Scaricamento del thumbnail fallito</string>
     <string name="pref_exoplayer_allow_press_speed_up">Tieni premuto per velocizzare</string>
     <string name="pref_exoplayer_allow_press_speed_up_summary">Tocca e tieni premuto lo schermo per velocizzare temporaneamente la riproduzione</string>
+    <string name="pref_exoplayer_press_speed_up_multiplier">Tieni premuto per velocizzare: velocità</string>
+    <string name="pref_exoplayer_press_speed_up_multiplier_summary">Velocità di riproduzione mentre tieni premuto lo schermo</string>
     <string name="downloads">Downloads</string>
     <string name="download_notifications_description">Notifiche di download</string>
     <string name="failed_network_method_check">Verifica i tuoi metodi di download permessi</string>

@@ -105,6 +105,15 @@ class AppPreferences(context: Context) {
     val exoPlayerAllowPressSpeedUp: Boolean
         get() = sharedPreferences.getBoolean(Constants.PREF_EXOPLAYER_ALLOW_PRESS_SPEED_UP, true)
 
+    /**
+     * Playback speed multiplier used while pressing and holding the screen (e.g. 1.5f).
+     */
+    val exoPlayerPressSpeedUpMultiplier: Float
+        get() = sharedPreferences.getInt(
+            Constants.PREF_EXOPLAYER_PRESS_SPEED_UP_MULTIPLIER,
+            Constants.HOLD_SPEEDUP_DEFAULT_PERCENT,
+        ).coerceIn(Constants.HOLD_SPEEDUP_MIN_PERCENT, Constants.HOLD_SPEEDUP_MAX_PERCENT) / 100f
+
     val exoPlayerRememberBrightness: Boolean
         get() = sharedPreferences.getBoolean(Constants.PREF_EXOPLAYER_REMEMBER_BRIGHTNESS, false)
 
