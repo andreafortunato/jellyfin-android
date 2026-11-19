@@ -35,6 +35,7 @@ object Constants {
     const val PREF_EXOPLAYER_START_LANDSCAPE_VIDEO_IN_LANDSCAPE = "pref_exoplayer_start_landscape_video_in_landscape"
     const val PREF_EXOPLAYER_ALLOW_SWIPE_GESTURES = "pref_exoplayer_allow_swipe_gestures"
     const val PREF_EXOPLAYER_ALLOW_PRESS_SPEED_UP = "pref_exoplayer_allow_press_speed_up"
+    const val PREF_EXOPLAYER_PRESS_SPEED_UP_MULTIPLIER = "pref_exoplayer_press_speed_up_multiplier"
     const val PREF_EXOPLAYER_REMEMBER_BRIGHTNESS = "pref_exoplayer_remember_brightness"
     const val PREF_EXOPLAYER_BRIGHTNESS = "pref_exoplayer_brightness"
     const val PREF_EXOPLAYER_ALLOW_BACKGROUND_AUDIO = "pref_exoplayer_allow_background_audio"
@@ -125,7 +126,11 @@ object Constants {
     const val DOUBLE_TAP_RIPPLE_DURATION_MS = 100L
     const val FULL_SWIPE_RANGE_SCREEN_RATIO = 0.66f
     const val SCREEN_BRIGHTNESS_MAX = 255
-    const val HOLD_SPEEDUP_MULTIPLIER = 3f
+    // Press-and-hold speed-up multiplier, stored as percent (300 = 3.0x)
+    const val HOLD_SPEEDUP_DEFAULT_PERCENT = 300
+    const val HOLD_SPEEDUP_MIN_PERCENT = 125
+    const val HOLD_SPEEDUP_MAX_PERCENT = 400
+    const val HOLD_SPEEDUP_STEP_PERCENT = 25
     const val ZOOM_SCALE_BASE = 1f
     const val ZOOM_SCALE_THRESHOLD = 0.01f
     val ASPECT_RATIO_16_9 = Rational(16, 9)
